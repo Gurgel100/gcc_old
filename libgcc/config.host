@@ -718,6 +718,10 @@ x86_64-*-mingw*)
 		extra_parts="$extra_parts vtv_start.o vtv_end.o vtv_start_preinit.o vtv_end_preinit.o"
 	fi
 	;;
+x86_64-*-youros*)
+	extra_parts="$extra_parts crtbegin.o crtend.o"
+	tmake_file="$tmake_file i386/t-crtstuff t-crtstuff-pic t-libgcc-pic"
+	;;
 i[34567]86-*-interix[3-9]*)
 	tmake_file="$tmake_file i386/t-interix i386/t-chkstk"
 	;;
