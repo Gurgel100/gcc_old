@@ -9,10 +9,6 @@
 #undef NO_IMPLICIT_EXTERN_C
 #define NO_IMPLICIT_EXTERN_C 1
 
-/* Standard include directory. */
-#undef STANDARD_INCLUDE_DIR
-#define STANDARD_INCLUDE_DIR ="/lib/include"
-
 /* Additional predefined macros. */
 #undef TARGET_OS_CPP_BUILTINS
 #define TARGET_OS_CPP_BUILTINS()		\
